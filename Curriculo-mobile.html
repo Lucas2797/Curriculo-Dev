@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculo Lucas Reimol</title>
-
 </head>
 <style>
     
     body{
         background-color: rgb(112, 96, 255);
         background-image: linear-gradient(to right, rgb(112, 96, 255), rgb(58, 37, 247));
+
     }
 
     div.page{
+        margin-top: 0px;
+        top: 0;
         background-color: white;
-        width: 66%;
+        max-width: 99%;
         padding-left: 0px;
-        margin-left: 20%;
+        margin-left: 0;
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
     }
 
@@ -42,7 +44,6 @@
         margin-left: 0px;
         padding-left: 0px;
         margin-bottom: 20px ;
-        width: inherit;
         height: inherit;
     }
 
@@ -63,25 +64,24 @@
     /* HEADER END */
 
 
-    /* FIRST */
+    /* Profile */
     div.first{
         margin-top: 50px;
-        display: flex;
     }
 
     div.img{
-        margin-top: 20px;
-        margin-left: 50px;
-        height: 200px;
+        margin-top: 150px;
+        height: 120px;
+        width: 120px;
         border-style: groove;
         border-color: rgb(112, 96, 255);
     }
 
     div.nome{
-        margin-left: 60px;
+        margin-left: 0px;
     }
 
-    /* FIRST END */
+    /* Profile END */
 
     /* TEXTS */
     .titling{
@@ -100,20 +100,22 @@
         height: 80px;
         transition-property: height, display;
         transition-duration: 1s;
+        z-index: 2;
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
     }
 
     div.exp:hover{
-        height: 430px;
+        height: 900px;
         position: relative;
     }
 
     .disp-inline{
-        display: inline-flex;
+
         margin-right: 70px;
     }
 
     div.exp2{
+        z-index: -1;
         opacity: 0%;
         transition-property: opacity;
         transition-duration: 1s;
@@ -126,15 +128,17 @@
 
     /* PROJETOS */
     div.exp-long{
+        margin: 0;
+        padding: 0;
         text-align: center;
-        height: 80px;
+        height: 50px;
         transition-property: height, display;
         transition-duration: 1s;
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
     }
 
     div.exp-long:hover{
-        height: 600px;
+        height: 1300px;
         position: relative;
     }
 
@@ -156,13 +160,14 @@
     /* CERTIFICADOS */
     div.cert{
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-        width: 219px;
+        width: 99%;
+        height: ;
     }
 
     /* CERTIFICADOS END */
     ul.list{
         text-align: left;
-        display: inline-block;
+
     }
 
 
@@ -183,28 +188,44 @@
     }
 
     div.whats{
-        display: flex;
-        margin-left: 43%;
     }
 
 </style>
-
-
 <body>
+    <!-- <div class="header">
+            <ul class="header">
+                <li class="header">
+                    <a class="header" href="">
+                        <h1 class="header">Inicio</h1>
+                    </a>
+                </li>
+                <li class="header">
+                    <a class="header" href="">
+                        <h1 class="header">Competências</h1>
+                    </a>
+                </li>
+                <li class="header">
+                    <a class="header" href="">
+                        <h1 class="header">Experiências</h1>
+                    </a>
+                </li>
+                <li class="header">
+                    <a class="header" href="">
+                        <h1 class="header">Contato</h1>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
     <div class="page">
         <div class="first">
             <div class="img">
-                <img src="static/profile.jpg" width="200px" height="200px" alt="">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQF7YTCNmJLtKw/profile-displayphoto-shrink_200_200/0?e=1603324800&v=beta&t=Bv_bT4xpxjlhX7mYGorvNXjPaQAyWiLjxK0NUcjj--c" width="120px" height="120px" alt="">
             </div>
             <div class="nome">
                 <h1 class="tes titling">Lucas Reimol Faria</h1>
                 <p>GitHub: <a href="https://github.com/lucasrf27">https://github.com/lucasrf27</a></p>
-                <p>StackOverflow: <a
-                        href="https://stackoverflow.com/users/10493488/lucasrf27?tab=profile">https://stackoverflow.com/users/10493488/lucasrf27?tab=profile</a>
-                </p>
-                <p>LinkedIn: <a
-                        href="https://www.linkedin.com/in/lucas-reimol-2439961a2/">https://www.linkedin.com/in/lucas-reimol-2439961a2/</a>
-                </p>
+                <p>StackOverflow: <a href="https://stackoverflow.com/users/10493488/lucasrf27?tab=profile">https://stackoverflow.com/users/10493488/lucasrf27?tab=profile</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-reimol-2439961a2/">https://www.linkedin.com/in/lucas-reimol-2439961a2/</a> </p>
                 <i>"Quero jogar com os melhores."</i>
             </div>
         </div>
@@ -264,9 +285,9 @@
                 </div>
             </div>
             <br>
-            <div class="exp-long">
+            <div class="exp">
                 <h1 class="titling">Projetos</h1>
-                <div class="exp-long2">
+                <div class="exp2">
                     <h2 class="titling">store_deployed</h2>
                     <p>E-commerce para empresa de roupas</p>
                     <a href="https://jrmoda.herokuapp.com/products/home">https://jrmoda.herokuapp.com/products/home</a><br>
@@ -300,19 +321,19 @@
             </div>
             <div class="exp-long">
                 <h1 class="titling">Certificados</h1>
-                <div class="exp-long2 disp-inline">
+                <div class="exp-long2">
                     <div class="cert">
-                        <img src="static/python-beyond-the-basics-1.jpg" width="200" height="200" alt="">
+                        <img src="static/python-beyond-the-basics-1.jpg" width="" height="200" alt="">
                         <h3 class="titling">Python Beyond the Basics</h3>
                         <p> Python beyond the basics vai profundo na nas utilizações de method e class, type de cada objeto, uso de iter, definição de __methods__ ex: __init__, tratamento de self, super. Brevemente sobre dashboards e bastante foco em decorators,  e inheritance.</p>
                     </div>
                     <div class="cert">
-                        <img src="static/python-managing-packages-1.jpg" width="200" height="200" alt="">
+                        <img src="static/python-managing-packages-1.jpg" width="" height="200" alt="">
                         <h3 class="titling">Managing Python Packages and Virtual Environments.</h3>
                         <p>Curso de treinamento básico na parte de git, mas com mais foco em tratamento de VirtualEnvs</p>
                     </div>
                     <div class="cert">
-                        <img src="static/python-best-pratices-code-quality-1.jpg" width="200" height="200" alt="">
+                        <img src="static/python-best-pratices-code-quality-1.jpg" width="" height="200" alt="">
                         <h3 class="titling">Python best pratices code quality.</h3>
                         <p>Curso demostra melhores maneiras de ativar a doc daquele method ou classe, .help(), .__doc__, etc. e ferramentas para criar um bom ReadMe</p>
                     </div>
@@ -323,13 +344,17 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
             <div class="exp">
                 <h1 class="titling">Contato</h1>
                 <div class="exp2">
                     <p class="titling">(21) 9915-01586</p>
                     <div class="whats">
                         <p class="titling">(21) 9681-51502</p>
-                        <img src="static/whats-icon.png" width="50px" height="50px" alt="">
+                        <a href="https://wa.me/5521968151502" target="_blank">
+                            <img src="static/whats-icon.png" width="" height="50px" alt="">
+                        </a>
                     </div>
                     <p class="titling">lucas.reimol@gmail.com</p>
                 </div>

@@ -123,7 +123,7 @@ div.exp-long{
 }
 
 div.exp-long:hover{
-    height: 900px;
+    height: 600px;
     position: relative;
 }
 
@@ -141,6 +141,14 @@ div.exp-long:hover > div.exp-long2{
 
 
 /* PROJETOS END */
+
+/* CERTIFICADOS */
+div.cert{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+/* CERTIFICADOS END */
 ul.list{
     text-align: left;
     display: inline-block;
