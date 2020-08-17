@@ -1,0 +1,169 @@
+
+body{
+    background-color: rgb(112, 96, 255);
+    background-image: linear-gradient(to right, rgb(112, 96, 255), rgb(58, 37, 247));
+}
+
+div.page{
+    background-color: white;
+    width: 66%;
+    padding-left: 0px;
+    margin-left: 20%;
+}
+
+/*  HEADER  */
+
+
+
+div.header{
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(168, 95, 0, 0.8));
+    border-style: groove;
+    border-color: blueviolet;
+    margin-left: 0px;
+    padding-left: 0px;
+    height: inherit;
+    float: left;
+    position: fixed;
+}
+
+ul.header{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 20px ;
+    width: inherit;
+    height: inherit;
+}
+
+li.header{
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+a.header{
+    text-decoration: none;
+}
+
+h1.header{
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+/* HEADER END */
+
+
+/* FIRST */
+div.first{
+    margin-top: 50px;
+    display: flex;
+}
+
+div.img{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 200px;
+    border-style: groove;
+    border-color: rgb(112, 96, 255);
+}
+
+div.nome{
+    margin-left: 60px;
+}
+
+/* FIRST END */
+
+/* TEXTS */
+.titling{
+    color: rgba(190, 190, 190, 0.363);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+
+
+/* COMPETENCIAS E EXPERIENCIAS */
+div.second{
+}
+
+div.exp{
+    text-align: center;
+    height: 80px;
+    transition-property: height, display;
+    transition-duration: 1s;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+div.exp:hover{
+    height: 430px;
+    position: relative;
+}
+
+.disp-inline{
+    display: inline-flex;
+    margin-right: 70px;
+}
+
+div.exp2{
+    opacity: 0%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+div.exp:hover > div.exp2{
+    opacity: 100%;
+    position: relative;
+}
+
+/* PROJETOS */
+div.exp-long{
+    text-align: center;
+    height: 80px;
+    transition-property: height, display;
+    transition-duration: 1s;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+div.exp-long:hover{
+    height: 900px;
+    position: relative;
+}
+
+
+div.exp-long2{
+    opacity: 0%;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+div.exp-long:hover > div.exp-long2{
+    opacity: 100%;
+    position: relative;
+}
+
+
+/* PROJETOS END */
+ul.list{
+    text-align: left;
+    display: inline-block;
+}
+
+
+img.check1{
+    border-color: red;
+    border-style: dashed;
+}
+
+
+img.check2{
+    border-style: dashed;
+    border-color: blue;
+}
+
+img.check3{
+    border-color: green;
+    border-style: dashed;
+}
+
+div.whats{
+    display: flex;
+    margin-left: 43%;
+}
